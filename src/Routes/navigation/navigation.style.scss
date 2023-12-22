@@ -1,0 +1,79 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 13vh;
+  text-transform: uppercase;
+
+  .humburger-menu {
+    h2 {
+      cursor: pointer;
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+
+  .logo-container {
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-left: 80px;
+    font-size: 100px;
+  }
+
+  .nav-links-container {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+
+    .nav-link h3 {
+      font-size: 30px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-right: 350px;
+
+      label {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+
+      input {
+        font-size: 20px;
+        height: 40px;
+        border: none;
+        margin-bottom: 20px;
+        border-bottom: 2px solid black;
+        background: transparent;
+        width: 250px;
+        padding: 10px;
+        outline: none;
+      }
+      input:focus {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .shop-cart-container h2 {
+      font-size: 25px;
+    }
+    .nav-link {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      transition: 0.2s;
+    }
+    .nav-link:hover {
+      transform: translateY(-4px);
+    }
+
+    & > div:last-child {
+      margin-left: auto;
+    }
+  }
+}

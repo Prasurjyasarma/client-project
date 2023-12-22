@@ -1,0 +1,24 @@
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: -3px; /* Set to a negative value to initially hide the cart bar on the right */
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.5s ease; /* Use 'right' for transition */
+  z-index: 1000;
+
+  .content {
+    padding: 20px;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cart-container.active {
+  right: 0; /* Move the cart bar to the right when the 'active' class is present */
+}

@@ -1,0 +1,27 @@
+.Main-banner-container {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 80vh;
+    display: block;
+  }
+
+  .Buttons-container-upper-row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  .Buttons-container-lower-row {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}

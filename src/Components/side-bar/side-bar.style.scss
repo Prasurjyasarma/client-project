@@ -1,0 +1,91 @@
+.side-bar-container {
+  position: fixed;
+  top: 0;
+  left: -5px; /* Initially hide the sidebar on the left */
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.5s ease;
+  z-index: 1000;
+  overflow-y: auto; /* Add scrollbar for vertical overflow */
+
+  .cont {
+    padding: 10px;
+    max-height: 80vh; /* Set a maximum height for the scrollbar to appear */
+
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: center;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .tabs {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0px;
+      margin-bottom: 20px;
+      font-size: 25px;
+
+      .tab {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid lightgray;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #000000;
+          color: white;
+        }
+      }
+    }
+
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+
+      .box {
+        flex: 0 0 calc(50% - 10px);
+        margin-bottom: 0px;
+
+        img {
+          cursor: pointer;
+          width: 100%;
+          height: 80%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .text-boxes {
+      display: flex;
+      flex-direction: column;
+
+      .text-box {
+        font-size: 20px;
+        flex: 1;
+        padding: 10px;
+        border: 1px solid lightgray;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.side-bar-container.active {
+  left: 0;
+}
