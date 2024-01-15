@@ -6,7 +6,7 @@ const Directory = () => {
   return (
     <div className="Main-banner-container">
       <img
-        src="https://unze.com.pk/cdn/shop/files/website-desktop-copy-2.jpg?v=1702271128&width=1280"
+        src="https://unze.com.pk/cdn/shop/files/Giga-Mall-Webanner-Desktop.jpg?v=1704346117&width=1280"
         alt="Main Banner"
       />
 
