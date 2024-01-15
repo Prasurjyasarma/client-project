@@ -3,6 +3,7 @@ import "./buttons.style.scss";
 export const BUTTON_TYPE_CLASSES = {
   black: "black-button",
   red: "red-button",
+  circle: "circle-button",
 };
 
 const Button = ({ children, buttonType, ...otherProps }) => {

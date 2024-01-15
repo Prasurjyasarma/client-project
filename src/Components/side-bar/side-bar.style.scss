@@ -5,7 +5,9 @@
   width: 400px;
   height: 100vh;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: left 0.5s ease;
   z-index: 1000;
   overflow-y: auto; /* Add scrollbar for vertical overflow */
@@ -23,6 +25,9 @@
 
       h1 {
         font-size: 1.5rem;
+      }
+      i {
+        cursor: pointer;
       }
     }
 
@@ -69,6 +74,8 @@
     }
 
     .text-boxes {
+      margin-top: 40px;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
 
@@ -77,10 +84,14 @@
         flex: 1;
         padding: 10px;
         border: 1px solid lightgray;
+        background-color: white;
 
         &:last-child {
-          margin-bottom: 0;
+          margin-bottom: 50px;
         }
+      }
+      .text-box:hover {
+        background-color: rgb(230, 230, 230);
       }
     }
   }
